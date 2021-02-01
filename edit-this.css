@@ -1,0 +1,138 @@
+body {
+	background-color:f4f4f4;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+  }
+
+ .image0 {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+ }
+
+
+#main-menu a:hover { 
+	color: #00000054; 
+	background: rgb(255, 255, 255); 
+}
+
+
+header {
+	padding: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+h2 {
+	color: rgb(0, 0, 0); 
+	font-family: 'Cinzel', serif;
+	line-height: 1.40em;
+	font-size:large;
+	margin: 15px;
+	padding: 15px;	
+	text-align: center;	
+}
+
+
+.teksti {
+	color: rgb(0, 0, 0);
+	font-family: 'Times New Roman', Times, serif;
+	font-size: large;
+}
+
+article { 
+	color: #6ebde2; 
+	font-family: 'Dancing Script', cursive;
+	line-height: 1.40em;
+	font-size:x-large;
+	margin: 15px;
+	padding: 15px;	
+	text-align: center;
+
+}
+
+
+.image { 
+	width: 40%; 
+    min-width: 100px;
+    margin: 27px;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+.button { 
+	text-decoration:none; 
+	padding: 6px;
+	margin: 12px;
+	color: #6ebde2;
+	font-family:'Times New Roman', Times, serif;
+	font-size: large;
+	
+}
+
+
+.button:hover { 
+	color: rgb(255, 255, 255); 
+	background: #03030356;
+}
+
+
+#container { 
+	position: relative;
+	width: 100%;
+	max-width: 700px;
+	min-height: 450px;
+	border: 2px rgba(136, 136, 136, 0.534);
+	padding: 20px;
+	background-color:F4F4F4;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 3%;
+
+}
+ nav {
+	 text-align: center;
+ }
+
+ .fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+  }
+
+footer {
+	margin: 20px;
+	text-align: center;
+}
+
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+	opacity: 70%;
+  }
+
+  .fa-instagram {
+	background: #125688;
+	color: white;
+	opacity: 70%;
+  }
+
+  .fa-youtube {
+	background: #bb0000;
+	color: white;
+	opacity: 70%;
+  }
+  
+
+
+
