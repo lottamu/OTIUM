@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset=utf-8>
+    <title>Contact form</title>
+
+    <style>
+
+        /* OtaYhteytä sivuun määritykset */
+        * {
+            box-sizing: border-box;
+        }
+    
+            
+        body {
+            background-color:f4f4f4;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            text-align: center;
+            font-size: 16px;
+            font-family:'Open Sans', sans-serif;
+        }  
+            html {
+            width: 100%;
+            height: 100%;
+        }
+        fieldset {
+            background: #5aa3c9;
+            text-align: center;
+            height: 100%;
+        }
+    
+        input.feedback {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            width: 25%;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        p {
+        font-family:'Open Sans', sans-serif;
+		text-align: justify;
+		width:45%;
+		padding: 15px;
+		margin-left:auto;
+		margin-right:auto;
+        text-align: center;
+        
+        }
+    
+        form {
+            color: white;
+            font-size:x-large;
+            height: 100%;
+        }
+    
+        textarea {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            width: 25%;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        /* Style the submit/rest button with a specific background color etc */
+        input[type=submit] {
+            color: #ffffff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: large;
+            cursor: pointer;
+            text-decoration: none;
+            line-height: 1.70em;
+            background-color: #86828260;
+            border-style: outset;
+            border-width: 1px;
+            border-color: #86828260;
+            width: 140px;
+            margin: 0 5px;
+            padding: 7px 10px;
+        }
+    
+        input[type="reset"] {
+            color: #ffffff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: large;
+            cursor: pointer;
+            text-decoration: none;
+            line-height: 1.70em;
+            background-color: #86828260;
+            border-style: outset;
+            border-width: 1px;
+            border-color: #86828260;
+            width: 140px;
+            margin: 0 5px;
+            padding: 7px 10px;
+        }
+
+        input[type="button"] {
+            color: #ffffff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: large;
+            cursor: pointer;
+            text-decoration: none;
+            line-height: 1.70em;
+            background-color: #86828260;
+            border-style: outset;
+            border-width: 1px;
+            border-color: #86828260;
+            width: 140px;
+            margin: 0 5px;
+            padding: 7px 10px;
+        }
+
+    
+        /* When moving the mouse over the submit button, add a darker color */
+        input[type=submit]:hover {
+            background-color: #03030356;
+        }
+    
+        input[type=reset]:hover {
+            background-color: #03030356;
+        }
+    
+        .about-section {
+            text-align: center;
+            /* background-color: #474e5d; */
+            color: white;
+            background-size: 400% 400%;
+            background: #5aa3c9;
+            height: 100%;
+
+        }
+
+        .about-section{
+            background-color: rgba(221, 217, 221, 0.4);
+            width: 100%;
+            float: center;
+            padding: 5px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        select {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            width: 25%;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(243, 243, 243);
+                }
+    
+        @media only screen and (max-width: 900px) {
+    
+            input.feedback,
+            select,
+            textarea {
+                width: 70%;
+            }
+    
+        }
+    </style>
+</head>
+<body>
+    
+
+
+<fieldset>
+
+    <div class="about-section">
+        
+        <br>
+        <h1>Y H T E Y D E N O T T O L O M A K E</h1>
+
+<br>
+    </div>
+
+    <form action="contactUs.php" method="POST" onsubmit="return confirmDesactiv()">
+        <p>Nimi *</p> <input class="feedback" type="text" name="name">
+        <p>Sähköposti *</p> <input class="feedback" type="email" name="email">
+        <p>Puhelinnumero *</p> <input class="feedback" type="number" name="phone">
+
+       
+
+        <p>Palautteen tyyppi:</p>
+        <select name="type" size="1">
+            <option value="Kiitos">Kiitos</option>
+            <option value="Moite">Moite</option>
+            <option value="Kysymys">Kysymys</option>
+            <option value="Kehitysehdotus">Kehitysehdotus</option>
+        </select>
+        <p>Jos haluat että otamme sinuun <br> puhelimitse yhteyden, rastita soittopyyntöruutu.  <br>
+            <br>
+            Soittopyyntö <input class="phoneCallRequest" type="checkbox" value="Yes" name="call"><br /></p>
+
+        <p>Viesti *</p><textarea class="feedback" name="message" rows="6" cols="25"></textarea><br />
+        <br />
+        <input type="submit" value="Lähetä" ><input type="reset" value="Poista"><input type="button" onclick="history.back();" value="Takaisin">
+    </form>
+    <br>
+</fieldset>
+<script>
+	function confirmDesactiv() {
+		if (confirm("Kiitos palautteesta! Olemme teihin yhteydessä mahdollisimman pian."))
+			return true;
+
+		return false;
+	}
+</script>
+
+</body>
+</html>

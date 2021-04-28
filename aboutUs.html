@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset=utf-8>
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            /* background-color: #474e5d; */
+            color: white;
+            background: linear-gradient(-45deg, #ee7752, #ef9ce5, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 45s ease infinite;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .Cbutton {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            /* background-color: #000; */
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            background: linear-gradient(-45deg, #ee7752, #ef9ce5, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 45s ease infinite;
+        }
+
+        .Cbutton:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        /* TUTUSTU MEIHIN sivulla oleva ETUSIVU nappi css */
+        #etusivuBtn {
+            color: #ffffff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: medium;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            line-height: 1.70em;
+            background-color: #86828260;
+            border-style: outset;
+            border-width: 1px;
+            border-color: #86828260;
+            outline:none;
+
+        }
+
+        h1 {
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(243, 243, 243);
+        }
+
+        #meollan {
+            color: rgb(7, 7, 7);
+            font-family:'Open Sans', sans-serif;
+            text-align: center;
+            text-justify: inter-word;
+            background-color: rgba(221, 217, 221, 0.4);		
+            width:97%;
+            min-width:250px;
+            padding: 15px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="about-section">
+        
+        <br>
+        <h1>T U T U S T U &nbsp;  M E I H I N</h1>
+        <p id="meollan">Me olemme hyvinvointi- ja terveysteknologian insinööriopiskelijoita Metropolia
+            ammattikorkeakoulusta. Tavoitteenamme on luoda työhyvinvointiin suunniteltu sovellus kattavampien palveluiden ja hoitojen muodostamiseksi.</p>
+            <br>
+            <form action="etusivu.php">
+                <button id="etusivuBtn" >E T U S I V U</button>
+            </form>
+
+    </div>
+
+
+
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="./kuvat/ella.jpeg" alt="ella" style="width:100%">
+                <div class="container">
+                    <h2>Ella Lonka</h2>
+                    <p class="title">Insinööriopiskelija</p>
+                    <p>Web-kehittäjä</p>
+                    <p>Ella.lonka@metropolia.fi</p>
+                    <p><button class="Cbutton">Ota yhteyttä</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./kuvat/noor.jpg" alt="noor" style="width:100%">
+                <div class="container">
+                    <h2>Noor Jamal</h2>
+                    <p class="title">Insinööriopiskelija</p>
+                    <p>Web-kehittäjä</p>
+                    <p>Noor.jamal@metropolia.fi</p>
+                    <p><button class="Cbutton">Ota yhteyttä</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./kuvat/lotta-copy.jpg" alt="lotta" style="width:100%">
+                <div class="container">
+                    <h2>Lotta Mustonen</h2>
+                    <p class="title">Insinööriopiskelija</p>
+                    <p>Web-kehittäjä</p>
+                    <p>Lotta.mustonen@metropolia.fi</p>
+                    <p><button class="Cbutton">Ota yhteyttä</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+
+    </footer>
+
+</body>
+
+</html>
